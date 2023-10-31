@@ -2,10 +2,11 @@ from django.shortcuts import render, HttpResponse
 
 
 def index_view(request):
-    return HttpResponse("<h1>Home Page</h1>")
+    return render(request, 'website/home.html')
 
-def about_view(request):
-    return HttpResponse("<h1>About Page</h1>")
+def profile_view(request):
+    return render(request, 'website/profile.html')
+
 
 def contact_view(request):
-    return HttpResponse("<h1>Contact Page</h1>")
+    return render(request, 'website/contact.html')
