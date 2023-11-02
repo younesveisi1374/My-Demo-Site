@@ -6,5 +6,6 @@ def blog_view(request):
 
 
 def blog_single(request):
-    return render(request, 'blog/blog-single.html')
+    context={'title':'create a context for blog','context':'i created a context for blog single using jinja','author':'Younes Veisi'}
+    return render(request, 'blog/blog-single.html',context)
 
